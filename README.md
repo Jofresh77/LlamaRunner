@@ -25,7 +25,7 @@ It provides a game instance subsystem, allowing it to be called from almost anyw
 - UE version: 5.5
 - A CUDA-based GPU *(i.e. NVIDIA GPU)*
 - Having a downloaded `.gguf` model **and** `.gbnf` grammar rules files.
-- 
+
 Simply drag and drop the repository root folder inside the Plugins folder of a Unreal Engine project **(it is not recommended to install it directly inside the engine Plugins folder)**.
 You must as well download your own `.gguf` model **and** `.gbnf` grammar rules *(grammar rules might become optionnal in the future)* and import then respectively inside the`Resources/Models` and `Resources/Grammars` directories. Then specify their pathes in a custom LlamaCppSubsystem class configuration in the editor.
 

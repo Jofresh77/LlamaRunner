@@ -27,7 +27,7 @@ You must as well download your own `.gguf` model **and** `.gbnf` grammar rules *
 - OS: Windows
 - UE version: 5.5
 - A CUDA-based GPU *(i.e. NVIDIA GPU)*
-- Having a downloaded
+- Having a downloaded `.gguf` model **and** `.gbnf` grammar rules files.
 
 ## Next Goals
 - Allow to config the model **without** grammar (current state requires one)

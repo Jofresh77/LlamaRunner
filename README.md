@@ -20,14 +20,14 @@ It provides a game instance subsystem, allowing it to be called from almost anyw
 - `SetSamplerConfig`: setter method for the `SamplerConfig` parameter. Act as a Blueprint setter with a custom logic that will **always** call `ClearChatHistory` once it has set the sampler config to a new value.
 
 ## Installation
-Simply drag and drop the repository root folder inside the Plugins folder of a Unreal Engine project **(it is not recommended to install it directly inside the engine Plugins folder)**.
-You must as well download your own `.gguf` model **and** `.gbnf` grammar rules *(grammar rules might become optionnal in the future)* and import then respectively inside the`Resources/Models` and `Resources/Grammars` directories. Then specify their pathes in a custom LlamaCppSubsystem class configuration in the editor.
-
 ### Requirements
 - OS: Windows
 - UE version: 5.5
 - A CUDA-based GPU *(i.e. NVIDIA GPU)*
 - Having a downloaded `.gguf` model **and** `.gbnf` grammar rules files.
+- 
+Simply drag and drop the repository root folder inside the Plugins folder of a Unreal Engine project **(it is not recommended to install it directly inside the engine Plugins folder)**.
+You must as well download your own `.gguf` model **and** `.gbnf` grammar rules *(grammar rules might become optionnal in the future)* and import then respectively inside the`Resources/Models` and `Resources/Grammars` directories. Then specify their pathes in a custom LlamaCppSubsystem class configuration in the editor.
 
 ## Next Goals
 - Allow to config the model **without** grammar (current state requires one)

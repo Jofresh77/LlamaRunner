@@ -33,3 +33,4 @@ You must as well download your own `.gguf` model **and** `.gbnf` grammar rules *
 - Allow to config the model **without** grammar (current state requires one)
 - Allow to dynamically switch grammar constraints within the same chat history.
 - Add support for decision models.
+- Add support for all GPU frameworks (currently only CUDA)

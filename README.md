@@ -1,8 +1,13 @@
 # LlamaRunner Unreal Engine Plugin
+
 ## Overview
-This plugin integrates the [llama.cpp](https://github.com/ggml-org/llama.cpp) library into the UE5 ecosystem, allowing game developers to run inferences to imported *.gguf* models during game runtime.
-It provides a game instance subsystem, allowing it to be called from almost anywhere inside the UE5 frameworks. A custom subsystem child of the LlamaCppSubsystem class can be created as Blueprint and then configured in the editor to provide the *.gguf* model file path that should be use with the subsystem, as well as other parameters mentionned in the section below.
+
+A [llama.cpp](https://github.com/ggml-org/llama.cpp) Third-Party Library Plugin for Unreal Engine 5.5 developed during prior independent coursework at HTW-Berlin.
+
+It provides a game instance subsystem, allowing it to be called from almost anywhere inside the UE5 runtime frameworks. A custom subsystem child of the LlamaCppSubsystem class can be created as Blueprint and then configured in the editor to provide the *.gguf* model file path that should be use with the subsystem, as well as other parameters mentionned in the section below.
+
 ## Features *(C++ & Blueprint)*
+
 - Common configuration:
   - `.gguf` Model path
   - Model parameters (context size, batches, graphical layers)
@@ -20,7 +25,9 @@ It provides a game instance subsystem, allowing it to be called from almost anyw
 - `SetSamplerConfig`: setter method for the `SamplerConfig` parameter. Act as a Blueprint setter with a custom logic that will **always** call `ClearChatHistory` once it has set the sampler config to a new value.
 
 ## Installation
+
 ### Requirements
+
 - OS: Windows
 - UE version: 5.5
 - A CUDA-based GPU *(i.e. NVIDIA GPU)*
